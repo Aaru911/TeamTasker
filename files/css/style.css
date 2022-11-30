@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif; 
+}
+
+nav{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+
+
+.icono{
+    display: block;
+    animation: moverIzquierda 1s ease-in;
+    z-index: 100000000;
+}
+
+header{
+    background: #1D2B64;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #F8CDDA, #1D2B64);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #F8CDDA, #1D2B64); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    height: auto;
+    padding: 48px;
+    width: 100%;
+}
+
+.container{
+    width: 95%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+
+img{
+    display: block;
+    height: 450px;
+    width: auto;
+    object-fit: cover;
+    animation: moverArriba 1s ease-in;
+}
+
+.textos{
+    width: 50%;
+    color: white;
+    animation: moverDerecha 1s ease-in;
+}
+
+.textos h1{
+    font-size: 50px;
+    padding-bottom: 10px;
+    animation: moverDerecha 1s ease-in;
+}
+
+.textos h2{
+    font-size: 23px;
+    animation: moverDerecha 1s ease-in;
+}
+
+.textos a{
+    display: inline-block;
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+    margin-top: 30px;
+    border: 1px solid white;
+    width: 150px;
+    border-radius: 3px;
+    text-align: center;
+    padding: 10px 0;
+    animation: moverArriba 1s ease-in;
+}
+
+.wabe{
+    height: 100px;
+    width: 100%;
+    background: #1D2B64;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #F8CDDA, #1D2B64);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #F8CDDA, #1D2B64); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+.enlaces{
+    position: fixed;
+    display: flex;
+    top: 0px;
+    background: black;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    flex-direction: column;
+    transition: all 1s ease;
+    background: #1D2B64;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #F8CDDA, #1D2B64);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #F8CDDA, #1D2B64); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.uno{
+    -webkit-clip-path:circle(0.5% at 0 0);
+    clip-path: circle(0.5% at 0 0);
+}
+
+.dos{
+   -webkit-clip-path:circle(150.9% at 0 0);
+   clip-path: circle(150.9% at 0 0);
+}
+
+@keyframes moverIzquierda{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px) ;
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0) ;
+    }
+}
+
+@keyframes moverDerecha{
+    0%{
+        opacity: 0;
+        transform: translateX(100px) ;
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0) ;
+    }
+}
+
+@keyframes moverArriba{
+    0%{
+        opacity: 0;
+        transform: translateY(-100px) ;
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0) ;
+    }
+}

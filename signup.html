@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Signup</title>
+    <script src="files/javascript.js"></script>
+    <link rel="stylesheet" href="files/css/signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="files/css/bg.css">
+
+</head>
+
+<body onload="log_check()">
+    <!--Header-->
+    <div class="navbar">
+        <a href="home.html"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a href="login.html"><i class="fa fa-fw fa-user"></i> Login</a>
+        <a href="signup.html"><i class="fa fa-fw fa-user-plus"></i> Signup</a>
+        <div class="Admin_div">
+            <a onclick="logout()"><i class="fa fa-fw fa-unlock"></i> logout</a>
+            <a onclick="Admin_check()"><i class="fa fa-fw fa-lock"></i> ADMIN PANNEL</a>
+        </div>
+    </div>  
+
+    <!--Form-->
+    <div class="signup">
+        <form name='form_signup'>
+
+            <h1>SIGN UP</h1>
+
+            <label>Email</label>
+            <input type="text" placeholder="username" name="t1" required><br>
+
+            <label>Password</label>
+            <input type="password" id="my_PW" placeholder="password" name="t2" required><br>
+
+            <div id="show">
+                <input type="checkbox" onclick="show_pwd()" style="display: inline-block;">
+                <label>Show Password</label>
+            </div>
+            
+            <input type="button" value="submit" onclick="signup()">
+
+        </form>
+    </div> 
+</body>
+
+</html>

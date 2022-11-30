@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+    <script src="files/javascript.js"></script>
+    <link rel="stylesheet" href="files/css/home.css">
+    <link rel="stylesheet" href="files/css/bg.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!--TODO script and CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    
+</head>
+
+<body onload="start_Check()">
+    
+     <!--Header-->
+    <div class="navbar">
+        <a href="landing.html"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a href="login.html"><i class="fa fa-fw fa-user"></i> Login</a>
+        <a href="signup.html"><i class="fa fa-fw fa-user-plus"></i> Signup</a>
+        <div class="Admin_div">
+          <a href="landing.html"><i class="fa fa-fw fa-unlock"></i> logout</a>
+          <a onclick="Admin_check()"><i class="fa fa-fw fa-lock"></i> ADMIN PANNEL</a>
+        </div>
+    </div>  
+  <br><br><br><br>
+  
+<div class="container">
+  
+  <form  action="#">
+    <input type="text" name="item" id="item" placeholder="Add New" />
+</form>  
+<ul id="list"></ul>
+
+</body>
+<script  src="files/todo.js"></script>
+</html>
