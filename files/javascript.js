@@ -1,19 +1,15 @@
-/*function start_Check()
+function start_Check()
 {
-    var login = (localStorage.getItem("Remember me") === 'true' || sessionStorage.getItem("Remember me") === 'true');
-    console.log(login);
-    if(login==true)
-    {
-        console.log("ready to add data");
-
-    }
-    else
-    {
-
-            location.href = "login.html";
-    }
+    var who=localStorage.getItem("who");
+      var storedValues = localStorage.getItem(who+"_data");
+      if(!storedValues) {
+        list.innerHTML;
+      }
+      else {
+        list.innerHTML = storedValues;
+      }
 }
-*/
+
 function log_check()
 {
     var login_LC = (localStorage.getItem("Remember me") === 'true');
