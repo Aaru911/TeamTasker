@@ -1,4 +1,4 @@
-function start_Check()
+/*function start_Check()
 {
     var login = (localStorage.getItem("Remember me") === 'true' || sessionStorage.getItem("Remember me") === 'true');
     console.log(login);
@@ -13,7 +13,7 @@ function start_Check()
             location.href = "login.html";
     }
 }
-
+*/
 function log_check()
 {
     var login_LC = (localStorage.getItem("Remember me") === 'true');
@@ -143,6 +143,5 @@ function logout()
 
 function fly()
 {
-
     location.href = "index.html";
 }
