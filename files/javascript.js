@@ -141,10 +141,8 @@ function logout()
     location.href = "home.html";
 }
 
-function Admin_check()
+function fly()
 {
-    if(localStorage.getItem("who")=="Admin" ||sessionStorage.getItem("who")=="Admin")
-    {
-        location.href = "admin.html";
-    }
+
+    location.href = "index.html";
 }
