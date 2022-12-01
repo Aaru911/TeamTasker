@@ -130,11 +130,24 @@ function show_pwd()
 
 function logout()
 {
-    localStorage.setItem("Remember me", false);
-    localStorage.setItem("who", null);
-    sessionStorage.setItem("Remember me", false);
-    sessionStorage.setItem("who", null);
-    location.href = "home.html";
+    var who=localStorage.getItem("who");
+    if(who!="null")
+    {
+        if(confirm("Are you sure Your want to logout?"))
+    {
+        localStorage.setItem("Remember me", false);
+        localStorage.setItem("who", null);
+        sessionStorage.setItem("Remember me", false);
+        sessionStorage.setItem("who", null);
+        location.href = "index.html";
+    }
+    }
+    else
+    {
+        alert("You arent logged in.");
+    }
+    
+    
 }
 
 function fly()
