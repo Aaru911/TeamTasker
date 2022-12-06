@@ -1,6 +1,6 @@
-    var list = document.querySelector('#list'),
+    var list = document.querySelector('#list1'),
         form = document.querySelector('form'),
-        item = document.querySelector('#item');
+        item = document.querySelector('#item1');
     
     form.addEventListener('submit',
     
@@ -11,7 +11,7 @@
       store();
       item.value = "";
     }
-    ,false)
+    )
     
     list.addEventListener('click',
     function(e)
@@ -24,7 +24,7 @@
       }
       store();
     }
-    ,false)
+    )
     
     function store() {
       var who=localStorage.getItem("who");
